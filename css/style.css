@@ -1,7 +1,15 @@
-body {
+/* ===== Сброс базовых стилей ===== */
+* {
   margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
   font-family: Arial, sans-serif;
   line-height: 1.6;
+  color: #333;
+  background-color: #fff;
 }
 
 .container {
@@ -10,23 +18,54 @@ body {
   margin: auto;
 }
 
-.header, .footer {
+/* ===== Шапка ===== */
+.header {
   background: #111;
   color: #fff;
   padding: 1rem 0;
 }
 
-.header nav a {
+.header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  height: 40px;
+  vertical-align: middle;
+}
+
+nav a {
   color: #fff;
   margin-left: 1rem;
   text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
 }
 
+nav a:hover {
+  color: #ff9800;
+}
+
+/* ===== Hero ===== */
 .hero {
-  background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
   color: #fff;
   text-align: center;
   padding: 4rem 1rem;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.hero h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 1.5rem;
 }
 
 .btn {
@@ -34,11 +73,16 @@ body {
   background: #ff9800;
   color: #fff;
   padding: 0.7rem 1.5rem;
-  margin-top: 1rem;
   text-decoration: none;
   border-radius: 5px;
+  transition: background 0.3s ease;
 }
 
+.btn:hover {
+  background: #e68900;
+}
+
+/* ===== Статистика ===== */
 .stats {
   display: flex;
   justify-content: space-around;
@@ -46,21 +90,81 @@ body {
   background: #f4f4f4;
 }
 
-.stat h3 {
-  color: #ff9800;
+.stat {
+  text-align: center;
 }
 
+.stat h3 {
+  color: #ff9800;
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+/* ===== FAQ ===== */
 .faq {
   padding: 2rem 0;
 }
 
-.faq-item {
-  margin-bottom: 1rem;
+.faq h2 {
+  text-align: center;
+  margin-bottom: 1.5rem;
 }
 
+.faq-item {
+  margin-bottom: 1rem;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 0.5rem;
+}
+
+.faq-item h4 {
+  cursor: pointer;
+  position: relative;
+  padding-right: 20px;
+}
+
+.faq-item p {
+  display: none;
+  margin-top: 0.5rem;
+}
+
+.faq-item p.show {
+  display: block;
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+/* ===== Анимация ===== */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-5px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* ===== Футер ===== */
+.footer {
+  background: #111;
+  color: #fff;
+  text-align: center;
+  padding: 1rem 0;
+  font-size: 0.9rem;
+}
+
+/* ===== Адаптив ===== */
 @media (max-width: 768px) {
   .stats {
     flex-direction: column;
     align-items: center;
+  }
+
+  nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  nav a {
+    margin: 0.5rem 0;
+  }
+
+  .hero h2 {
+    font-size: 2rem;
   }
 }
