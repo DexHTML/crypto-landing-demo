@@ -3,7 +3,7 @@
 Adaptive, responsive landing page for a fictional crypto platform.  
 Built with **HTML5**, **CSS3**, and **JavaScript** — focused on clean UI, smooth animations, and conversion‑oriented UX.
 
-![Preview](images/screenshot.jpg) <!-- сюда вставь скриншот лендинга -->
+![Preview](images/screenshot.jpg)
 
 ---
 
