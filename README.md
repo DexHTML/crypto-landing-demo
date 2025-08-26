@@ -3,10 +3,12 @@
 Adaptive, responsive landing page for a fictional crypto platform.  
 Built with **HTML5**, **CSS3**, and **JavaScript** — focused on clean UI, smooth animations, and conversion‑oriented UX.
 
-![Preview](images/screenshot.jpg)
+![Preview](images/screenshot.jpg) <!-- сюда вставь скриншот лендинга -->
+
+---
 
 ## 🌐 Demo
-[**View Live Project**](https://devhtml.github.io/crypto-landing-demo/)  
+[**View Live Project**](https://dexhtml.github.io/crypto-landing-demo/)
 
 ---
 
@@ -28,20 +30,21 @@ Built with **HTML5**, **CSS3**, and **JavaScript** — focused on clean UI, smoo
 ---
 
 ## 📂 Project Structure
-
+```plaintext
 crypto-landing-demo/
-│
 ├── index.html
 ├── css/
-│ └── style.css
+│   └── style.css
 ├── js/
-│ └── script.js
+│   └── script.js
 └── images/
-├── logo.png
-├── bg.jpg
-└── screenshot.jpg
----
+    ├── logo.png
+    ├── bg.jpg
+    └── screenshot.jpg
+```
 
 ## 👨‍💻 Author
 **Vyacheslav (DexHTML)** — Frontend Developer specializing in crypto landing pages, UX animations, and conversion optimization.  
 📧 Contact: [Telegram](https://t.me/Slaffkamak) | [Email](mailto:immun1986@gmail.com)
+
+---
